@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"   content="windh=device-width,initial-scale11,maximu-scale=1,user-scalab=0,viewport-fit=cover">
+    <script src="https://static.line-scdn.net/liff/edge/versions/2.16.0/sdk.js"></script>
+</head>
+<body>
+    
+    <script>
+        async function main() {
+            await liff.init({ liffId: "1656572443-N6KrOEwZ" }) 
+            await liff.shareTargetPicker ([
+                {
+                    type: "flex",
+                    altText: "โปรโมชั่นสมาชิกใหม่รับเพิ่ม 50%",
+                    contents: 
+                    {
+                        "type": "bubble",
+                        "size": "giga",
+                        "body": {
+                            "type": "box",
+                            "layout": "vertical",
+                            "contents": [
+                            {
+                                "type": "image",
+                                "url": "https://scontent.fbkk22-2.fna.fbcdn.net/v/t39.30808-6/248406371_112941164513232_5545039754447300083_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=730e14&_nc_ohc=4X7d6sGHaSoAX82itT1&_nc_ht=scontent.fbkk22-2.fna&oh=e845e6bb39c791cce6694fc9360db84b&oe=617F654E",
+                                "size": "full",
+                                "aspectMode": "cover",
+                                "aspectRatio": "1:1",
+                                "gravity": "center"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [],
+                                "position": "absolute",
+                                "background": {
+                                "type": "linearGradient",
+                                "angle": "0deg",
+                                "endColor": "#00000000",
+                                "startColor": "#00000099"
+                                },
+                                "width": "100%",
+                                "height": "40%",
+                                "offsetBottom": "0px",
+                                "offsetStart": "0px",
+                                "offsetEnd": "0px"
+                            },
+                            {
+                                "type": "box",
+                                "layout": "horizontal",
+                                "contents": [
+                                {
+                                    "type": "box",
+                                    "layout": "vertical",
+                                    "contents": [
+                                    {
+                                        "type": "box",
+                                        "layout": "horizontal",
+                                        "contents": [
+                                        {
+                                            "type": "button",
+                                            "action": {
+                                            "type": "uri",
+                                            "label": "สมัครสมาชิก",
+                                            "uri": "https://www.blucky888.com/users/home"
+                                            },
+                                            "style": "secondary",
+                                            "height": "sm",
+                                            "color": "#32CD32"
+                                        },
+                                        {
+                                            "type": "button",
+                                            "action": {
+                                            "type": "uri",
+                                            "label": "ติดต่อแอดมิน",
+                                            "uri": "https://lin.ee/NlRMjo4"
+                                            },
+                                            "style": "secondary",
+                                            "height": "sm",
+                                            "color": "#FF8C00"
+                                        }
+                                        ],
+                                        "spacing": "sm"
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "vertical",
+                                        "contents": [
+                                        {
+                                            "type": "button",
+                                            "action": {
+                                            "type": "uri",
+                                            "label": "แชร์ 5 กลุ่มรับโปรโมชั่นสมาชิกใหม่",
+                                            "uri": "https://liff.line.me/1656572443-N6KrOEwZ"
+                                            },
+                                            "style": "primary",
+                                            "height": "sm",
+                                            "color": "#FF0000"
+                                        }
+                                        ],
+                                        "spacing": "none",
+                                        "margin": "sm"
+                                    }
+                                    ],
+                                    "spacing": "xs"
+                                }
+                                ],
+                                "position": "absolute",
+                                "offsetBottom": "0px",
+                                "offsetStart": "0px",
+                                "offsetEnd": "0px",
+                                "paddingAll": "20px"
+                            }
+                            ],
+                            "paddingAll": "0px"
+                        }
+                    }                 
+ 
+                }
+            ])
+            liff.closeWindow()
+        }            
+         main()
+    </script>
+</body>
+</html>
